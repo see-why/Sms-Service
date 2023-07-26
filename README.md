@@ -32,7 +32,7 @@ A database model (`./app/models/sms_message.rb`) is used to store each sms reque
 - **You can change the database adapter in `./config/database.yml` to a more suitable SQL database**
 - **Enter database credentials in `./config/database.yml` for each database**
 - **To get a local copy of the repository please run the following commands on your terminal:**
-- **$ git clone https://github.com/see-why/RailsLedger.git**
+- **$ git clone https://github.com/see-why/Sms-Service.git**
 - **$ run `bundle install` to couple all dependacies in gem files**
 - **$ run `rspec spec` to run all application unit tests**
 - **$ run `rails s` to start rails server**
