@@ -1,0 +1,9 @@
+
+Metrics/AbcSize:
+  Enabled: false
+
+Style/RescueStandardError:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
