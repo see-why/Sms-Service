@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: Sms_Service_production
-  username: Sms_Service
+  username: postgres
   password: <%= ENV["SMS_SERVICE_DATABASE_PASSWORD"] %>
