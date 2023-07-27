@@ -57,3 +57,6 @@ build-iPhoneSimulator/
 
 /config/master.key
 /config/credentials.yml.enc
+.env
+log/development.log
+log/test.log
