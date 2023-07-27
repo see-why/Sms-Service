@@ -7,13 +7,13 @@ class SmsMessage < ApplicationRecord
 
   attribute :status, :integer, default: STATUS_TEXT[:PROCESSING]
 
+  scope :resendable, -> { where(status: STATUS_TEXT[:FAILED]).where('created_at >= ?', Time.now.yesterday) }
+
   def sent
     update(status: STATUS_TEXT[:SENT])
-    save
   end
 
   def failed
     update(status: STATUS_TEXT[:FAILED])
-    save
   end
 end
