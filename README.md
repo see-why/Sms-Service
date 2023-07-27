@@ -38,6 +38,7 @@ A database model (`./app/models/sms_message.rb`) is used to store each sms reque
 - **$ run `rails s` to start rails server**
   
 ## Database creation
+Ensure the database service is running then
 Run rails db:create db:migrate
 
 👤 **Cyril Iyadi**
