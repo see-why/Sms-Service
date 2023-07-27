@@ -5,7 +5,7 @@ module Worker
       phone_number = payload[:phone_number]
       text = payload[:text]
 
-      sms_mesage = SmsMessage.new(phone_number: phone_number, text: text)
+      sms_mesage = SmsMessage.create(phone_number: phone_number, text: text)
       service = SmsSenderService.new # add notifier and logger once implemented
       service.send sms_mesage
     rescue
